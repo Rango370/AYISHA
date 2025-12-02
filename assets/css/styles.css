@@ -1,0 +1,95 @@
+
+/* ElectraCables Co. Styles */
+:root { --bg:#0b1220; --primary:#1e90ff; --text:#111; --muted:#555; --card:#fff; --accent:#0ec254; }
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial; color:var(--text); }
+img { max-width: 100%; display: block; }
+.container { width: min(1100px, 92%); margin: 0 auto; }
+
+/* Header */
+.site-header { background: #ffffffcc; backdrop-filter: blur(6px); position: sticky; top:0; z-index: 10; border-bottom: 1px solid #eee; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:0.8rem 0; }
+.brand { display:flex; align-items:center; gap:0.6rem; text-decoration:none; color:inherit; font-weight:700; }
+.brand img { width:36px; height:36px; }
+.site-nav ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+.site-nav a { text-decoration:none; color:#222; font-weight:600; padding:0.4rem 0.6rem; border-radius:6px; }
+.site-nav a:hover { background:#f2f6ff; color:#0b5bd3; }
+.nav-toggle { display:none; background:none; border:1px solid #ddd; padding:0.3rem 0.5rem; border-radius:6px; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #f7fbff 0%, #ffffff 100%); border-bottom:1px solid #eee; }
+.hero-inner { display:grid; grid-template-columns: 1.2fr 1fr; align-items:center; gap:2rem; padding:3rem 0; }
+.hero-text h1 { font-size: clamp(1.8rem, 3vw, 3rem); margin:0 0 0.6rem; }
+.hero-text p { color:var(--muted); margin:0 0 1rem; }
+.hero-actions { display:flex; gap:0.8rem; }
+
+.btn { display:inline-block; border:1px solid #ddd; padding:0.6rem 1rem; border-radius:8px; text-decoration:none; font-weight:600; }
+.btn-primary { background: var(--primary); color:white; border-color: var(--primary); }
+.btn-primary:hover { background:#0b5bd3; border-color:#0b5bd3; }
+.btn-outline { color:#0b5bd3; border-color:#0b5bd3; }
+.btn-outline:hover { background:#f2f6ff; }
+
+/* Features */
+.features { padding:2rem 0; }
+.grid-3 { display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem; }
+.card { background:var(--card); border:1px solid #eee; border-radius:12px; padding:1rem; box-shadow:0 1px 2px rgba(0,0,0,0.04); }
+.card h3 { margin:0 0 0.5rem; }
+.card p { margin:0; color:var(--muted); }
+
+/* CTA */
+.cta { background:#0b1220; color:white; }
+.cta-inner { padding:2rem 0; text-align:center; }
+.cta .btn-primary { background: var(--accent); border-color: var(--accent); }
+
+/* Page header */
+.page-header { padding:2rem 0 1rem; border-bottom:1px solid #eee; }
+.page-header h1 { margin:0 0 0.5rem; }
+.page-header p { margin:0; color:var(--muted); }
+
+/* Two column layout */
+.two-col { display:grid; grid-template-columns: 2fr 1fr; gap:2rem; padding:1.5rem 0; }
+.aside .stat { background:#f7fbff; border:1px solid #eaf2ff; padding:1rem; border-radius:10px; margin-bottom:0.8rem; }
+.aside .num { font-size:1.4rem; font-weight:700; color:#0b5bd3; }
+
+/* Products */
+.product-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem; padding:1.5rem 0; }
+.product-card { border:1px solid #eee; border-radius:12px; background:white; padding:1rem; display:flex; flex-direction:column; gap:0.5rem; }
+.product-card h3 { margin:0.5rem 0 0; }
+.product-card p { margin:0; color:var(--muted); }
+.product-card ul { margin:0.5rem 0 0; padding-left:1rem; color:#333; }
+
+.note { padding:0 0 2rem; color:#666; }
+
+/* Services */
+.services-list { display:grid; grid-template-columns: repeat(2, 1fr); gap:1rem; padding:1.5rem 0; }
+.service { background:#fff; border:1px solid #eee; border-radius:10px; padding:1rem; }
+
+/* Contact */
+.contact-grid { display:grid; grid-template-columns: 1.5fr 1fr; gap:2rem; padding:1.5rem 0; }
+.contact-form { display:grid; gap:0.6rem; }
+.contact-form input, .contact-form textarea { padding:0.6rem; border:1px solid #ddd; border-radius:8px; font:inherit; }
+.form-note { color:#777; font-size:0.9rem; }
+
+/* Footer */
+.site-footer { border-top:1px solid #eee; background:#fafafa; }
+.footer-inner { display:grid; grid-template-columns: 1.5fr 1fr 1fr; gap:1rem; padding:1.2rem 0; align-items:center; }
+.footer-links { display:flex; gap:0.8rem; }
+.footer-links a { color:#0b5bd3; text-decoration:none; }
+.footer-copy { color:#777; font-size:0.9rem; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .product-grid { grid-template-columns: 1fr 1fr; }
+  .services-list { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .site-nav { display:none; }
+  .site-nav.open { display:block; }
+  .site-nav ul { flex-direction: column; }
+  .nav-toggle { display:block; }
+}

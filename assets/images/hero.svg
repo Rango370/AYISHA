@@ -1,0 +1,20 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' width='640' height='400' viewBox='0 0 640 400'>
+  <defs>
+    <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#f2f6ff'/>
+      <stop offset='100%' stop-color='#ffffff'/>
+    </linearGradient>
+  </defs>
+  <rect width='640' height='400' fill='url(#bg)' />
+  <g transform='translate(40,60)'>
+    <rect x='0' y='60' width='560' height='180' rx='20' fill='#0b1220' opacity='0.9'/>
+    <g stroke='#1e90ff' stroke-width='6' fill='none' opacity='0.9'>
+      <path d='M20 120 C60 100, 100 140, 140 120 S220 100, 260 120 S340 140, 380 120 S460 100, 500 120' />
+      <path d='M20 150 C60 170, 100 130, 140 150 S220 170, 260 150 S340 130, 380 150 S460 170, 500 150' stroke='#0ec254' />
+    </g>
+    <circle cx='520' cy='120' r='20' fill='#1e90ff'/>
+    <circle cx='520' cy='150' r='20' fill='#0ec254'/>
+    <text x='20' y='40' font-size='24' fill='#0b1220' font-family='Inter, Arial' font-weight='700'>Industrial‑grade cable performance</text>
+  </g>
+</svg>

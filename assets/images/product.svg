@@ -1,0 +1,11 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' width='400' height='260' viewBox='0 0 400 260'>
+  <rect width='400' height='260' fill='#f7fbff' />
+  <g transform='translate(20,40)'>
+    <rect x='0' y='50' width='360' height='60' rx='14' fill='#0b1220'/>
+    <rect x='0' y='130' width='360' height='60' rx='14' fill='#1e90ff'/>
+    <rect x='0' y='15' width='360' height='18' rx='9' fill='#0ec254'/>
+    <circle cx='340' cy='80' r='14' fill='#fff'/>
+    <circle cx='340' cy='160' r='14' fill='#fff'/>
+  </g>
+</svg>
